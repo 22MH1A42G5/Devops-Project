@@ -167,8 +167,34 @@ Required plugins (*Docker, Pipeline, Git*) were installed on Jenkins.
 ****Why it’s important:****
 Plugins extend Jenkins functionality, enabling integration with Docker, Git, and other tools.
 
+
+### Navigating to Jenkins Credentials
+*Screenshot 1:*
+<p align="center">
+  <img src="https://github.com/22MH1A42G5/Devops-Project/blob/main/AutoDeploy/Snapshots/Screenshot%20(15).png" width="600" height="350">
+</p>
+
+***Description:***  
+Navigate to *Manage Jenkins → Credentials → Global Credentials* to add required credentials.
+
+*Screenshot 2: Docker & SSH Credentials in Jenkins*  
+<p align="center">
+  <img src="https://github.com/22MH1A42G5/Devops-Project/blob/main/AutoDeploy/Snapshots/Screenshot%20(16).png" width="600" height="350">
+</p>
+
+****Description:****
+*Docker Hub credentials* were added to enable Jenkins to push/pull images securely.  
+*PEM key file (PemOfCICD.pem)* was added as a *SSH USERNAME AND PRIVATE KEY* to allow SSH access to AWS EC2 instances.  
+
+****Why it’s important:****
+Jenkins needs *Docker Hub authentication* to interact securely with container registries.  
+The *PEM key file* ensures secure SSH access for deployment tasks on AWS.
+
 ### Pipeline Creation
-*Screenshot:* jenkins_pipeline.png
+*Screenshot:* 
+<p align="center">
+  <img src="https://github.com/22MH1A42G5/Devops-Project/blob/main/AutoDeploy/Snapshots/Screenshot%20(18).png" width="600" height="350">
+</p>
 
 ****Description:****
 A pipeline named *AutoDeploy Pipeline* was created. The Groovy script for the pipeline was written, applied, and saved.
@@ -177,7 +203,10 @@ A pipeline named *AutoDeploy Pipeline* was created. The Groovy script for the pi
 The pipeline automates the build, test, and deployment process.
 
 ### Build Pipeline
-*Screenshot:* jenkins_build.png
+*Screenshot:* 
+<p align="center">
+  <img src="https://github.com/22MH1A42G5/Devops-Project/blob/main/AutoDeploy/Snapshots/Screenshot%20(19).png" width="600" height="350">
+</p>
 
 ****Description:****
 The pipeline was executed by clicking *Build Now*, and it ran successfully.
@@ -188,7 +217,10 @@ This step verifies that the pipeline is working as expected.
 ## 5. Docker Setup
 
 ### Docker Access
-*Screenshot:* docker_access.png
+*Screenshot:* 
+<p align="center">
+  <img src="https://github.com/22MH1A42G5/Devops-Project/blob/main/AutoDeploy/Snapshots/Screenshot%20(22).png" width="600" height="350">
+</p>
 
 ****Description:****
 Verified that Docker is accessible on port 80 using the public IP of the Docker_CICD_Ec2 instance.
@@ -197,7 +229,10 @@ Verified that Docker is accessible on port 80 using the public IP of the Docker_
 Ensures Docker is running and accessible for deploying applications.
 
 ### Docker Image Build
-*Screenshot:* docker_image.png
+*Screenshot:* 
+<p align="center">
+  <img src="https://github.com/22MH1A42G5/Devops-Project/blob/main/AutoDeploy/Snapshots/Screenshot%20(23).png" width="600" height="350">
+</p>
 
 ****Description:****
 Checked the Docker account to confirm that the image was built successfully.
@@ -206,7 +241,10 @@ Checked the Docker account to confirm that the image was built successfully.
 Ensures the application is containerized and ready for deployment.
 
 ### Docker Swarm Replicas
-*Screenshot:* docker_swarm.png
+*Screenshot:* 
+<p align="center">
+  <img src="https://github.com/22MH1A42G5/Devops-Project/blob/main/AutoDeploy/Snapshots/Screenshot%20(24).png" width="600" height="350">
+</p>
 
 ****Description:****
 Verified the replicas created using Docker Swarm with the command:
