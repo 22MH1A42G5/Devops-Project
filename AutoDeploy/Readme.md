@@ -1,4 +1,4 @@
-# AUTO DEPLOY
+#  AUTOMATED CI/CD PIPELINE WITH TERRAFORM, ANSIBLE, and JENKINS
 
 This project demonstrates the creation of a *CICD (Continuous Integration and Continuous Deployment) pipeline* using *Terraform, Ansible, Docker, and Jenkins*. The infrastructure is provisioned using Terraform, configured using Ansible, and the pipeline is automated using Jenkins and Docker.
 
