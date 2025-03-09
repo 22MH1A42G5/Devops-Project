@@ -105,9 +105,9 @@ The key pair ensures secure SSH access to the instances without using passwords.
 ****Description:****
 The inventory.ini file defines the target servers (EC2 instances) for Ansible. The command below was used to ping the servers and verify connectivity:
 
-bash
+``` bash
 ansible all -m ping -i inventory.ini
-
+```
 
 ****Why it’s important:****
 The inventory file is essential for Ansible to know which servers to manage.
@@ -249,9 +249,9 @@ Ensures the application is containerized and ready for deployment.
 ****Description:****
 Verified the replicas created using Docker Swarm with the command:
 
-bash
+``` bash
 ansible -i inventory.ini docker_host -m command -a "sudo docker ps"
-
+```
 
 ****Why it’s important:****
 Ensures the application is running in a highly available and scalable manner.
