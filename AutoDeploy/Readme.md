@@ -1,34 +1,43 @@
-# Terraform and Ansible CICD Pipeline Setup
+# AUTO DEPLOY
 
 This project demonstrates the creation of a *CICD (Continuous Integration and Continuous Deployment) pipeline* using *Terraform, Ansible, Docker, and Jenkins*. The infrastructure is provisioned using Terraform, configured using Ansible, and the pipeline is automated using Jenkins and Docker.
 
 ## 1. Terraform Setup
 
 ### Terraform Init
-*Screenshot:* terraform_init.png
+*Screenshot:*
+<p align="center">
+  <img src="https://github.com/22MH1A42G5/Devops-Project/blob/main/AutoDeploy/Snapshots/Screenshot%20(1).png" width="600" height="300">
+</p>
 
-*Description:*
+**Description:**
 The terraform init command initializes the working directory and downloads the necessary provider plugins (e.g., AWS provider) to manage the resources.
 
-*Why it’s important:*
+**Why it’s important:**
 This step ensures Terraform is ready to create and manage the infrastructure defined in the configuration files.
 
 ### Terraform Plan
-*Screenshot:* terraform_plan.png
+*Screenshot:*
+<p align="center">
+  <img src="https://github.com/22MH1A42G5/Devops-Project/blob/main/AutoDeploy/Snapshots/Screenshot%20(2).png" width="600" height="300">
+</p>
 
-*Description:*
+**Description:**
 The terraform plan command provides an execution plan, showing what resources will be created, updated, or deleted.
 
-*Why it’s important:*
+**Why it’s important:**
 This step helps verify the configuration before applying any changes, ensuring no unintended modifications are made.
 
 ### Terraform Apply
-*Screenshot:* terraform_apply.png
+*Screenshot:* 
+<p align="center">
+  <img src="https://github.com/22MH1A42G5/Devops-Project/blob/main/AutoDeploy/Snapshots/Screenshot%20(4).png" width="600" height="300">
+</p>
 
-*Description:*
+**Description:**
 The terraform apply command creates the actual resources in AWS as defined in the Terraform configuration.
 
-*Why it’s important:*
+**Why it’s important:**
 This step provisions the infrastructure, including EC2 instances, VPC, subnets, and security groups.
 
 ## 2. Resources Created by Terraform
