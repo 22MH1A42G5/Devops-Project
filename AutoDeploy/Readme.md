@@ -121,7 +121,7 @@ The inventory file is essential for Ansible to know which servers to manage.
 ****Description:****
 The install_docker.yaml playbook was executed to install Docker on the target servers.
 
-****Why it’s important: ****
+****Why it’s important:****
 Docker is required to containerize and deploy applications.
 
 ### Install Jenkins
@@ -257,4 +257,4 @@ ansible -i inventory.ini docker_host -m command -a "sudo docker ps"
 Ensures the application is running in a highly available and scalable manner.
 
 ## Conclusion
-This project successfully demonstrates the automation of *infrastructure provisioning using Terraform, **configuration management using Ansible, and **CICD pipeline setup using Jenkins and Docker*. The pipeline ensures seamless integration and deployment of applications.
+This project successfully demonstrates the automation of infrastructure provisioning using Terraform, **configuration management using Ansible, and **CICD pipeline setup using Jenkins and Docker. The pipeline ensures seamless integration and deployment of applications.
